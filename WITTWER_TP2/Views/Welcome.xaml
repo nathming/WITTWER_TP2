@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WITTWER_TP2.ViewModels"  
+             xmlns:model="clr-namespace:WITTWER_TP2.Models" 
+             x:Class="WITTWER_TP2.Views.Welcome">
+    <ContentPage.Content>
+        <Grid Background="#353465">
+            <RefreshView x:DataType="local:WelcomeViewModel" Command="{Binding LoadAppCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="AppListView" ItemsSource="{Binding Applications}" SelectionMode="None" Margin="50,25,50,25">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Style="{StaticResource BaseFame}">
+                                <StackLayout Padding="10" x:DataType="model:AppModel">
+                                    <Label Text="{Binding AppName}" 
+                    LineBreakMode="NoWrap" 
+                    Style="{DynamicResource ListItemTextStyle}" 
+                    FontSize="16" TextColor="#EFC18A"/>
+                                    <Label Text="{Binding AppPassword}" 
+                    LineBreakMode="NoWrap"
+                    Style="{DynamicResource ListItemDetailTextStyle}"
+                    FontSize="13" TextColor="#EFC18A"/>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+            <!--<StackLayout>
+                <Label Text="Welcome to Xamarin.Forms!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            
+            
+            </StackLayout>-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

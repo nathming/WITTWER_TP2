@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WITTWER_TP2.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#49436C">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="2.5*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1">
+                <StackLayout>
+                    <Image Source="IcnPasswd.png" HeightRequest="170"/>
+                    <Label Text="Welcome" Style="{StaticResource LB_Title}" FontSize="35"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+                    <Label Style="{StaticResource BaseLB}" Text="Email"/>
+                    <Entry Style="{StaticResource Entry}" Text="{Binding Email, Mode=TwoWay}"/>
+                    <Label Style="{StaticResource BaseLB}" Text="Password"/>
+                    <Entry Style="{StaticResource Entry}" Text="{Binding Passwd, Mode=TwoWay}" IsPassword="True"/>
+                    <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="1" Grid.Column="1" Text="sign up" Style="{StaticResource ButtonWOut_bck}">
+                    
+                </Button>
+                
+            </Grid>
+
+            
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
