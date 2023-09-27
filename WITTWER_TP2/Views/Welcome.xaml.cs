@@ -13,10 +13,25 @@ namespace WITTWER_TP2.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Welcome : ContentPage
     {
+        WelcomeViewModel _viewModel;
+
         public Welcome()
         {
             InitializeComponent();
-            this.BindingContext = new WelcomeViewModel();
+            BindingContext = _viewModel = new WelcomeViewModel();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            _viewModel.OnAppearing();
+        }
+
+        private void Button_SizeChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

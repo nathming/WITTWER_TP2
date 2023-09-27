@@ -13,6 +13,8 @@ namespace WITTWER_TP2
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(InfoPswdPage), typeof(InfoPswdPage));
+            Routing.RegisterRoute(nameof(AddPswdPage), typeof(AddPswdPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

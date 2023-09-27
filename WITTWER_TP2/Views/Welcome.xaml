@@ -4,8 +4,14 @@
              xmlns:local="clr-namespace:WITTWER_TP2.ViewModels"  
              xmlns:model="clr-namespace:WITTWER_TP2.Models" 
              x:Class="WITTWER_TP2.Views.Welcome">
+    
     <ContentPage.Content>
         <Grid Background="#353465">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            
             <RefreshView x:DataType="local:WelcomeViewModel" Command="{Binding LoadAppCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
                 <CollectionView x:Name="AppListView" ItemsSource="{Binding Applications}" SelectionMode="None" Margin="50,25,50,25">
                     <CollectionView.ItemTemplate>
@@ -20,6 +26,14 @@
                     LineBreakMode="NoWrap"
                     Style="{DynamicResource ListItemDetailTextStyle}"
                     FontSize="13" TextColor="#EFC18A"/>
+
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer 
+        NumberOfTapsRequired="1"
+        Command="{Binding Source={RelativeSource AncestorType={x:Type local:WelcomeViewModel}}, Path=AppTapped}"		
+        CommandParameter="{Binding .}">
+                                        </TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
                                 </StackLayout>
                             </Frame>
                         </DataTemplate>
@@ -33,6 +47,11 @@
             
             
             </StackLayout>-->
+
+            <Grid Grid.Row="1">
+                <Button Margin="80,50,80,50" Text="Add Password" FontSize="20" ImageSource="IcnAdd.png" Command="{Binding OnAddClickedCommand}" x:Name="BTN_ADDPASSWD"/>
+            </Grid>
+            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

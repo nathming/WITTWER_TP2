@@ -1,8 +1,14 @@
+C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\WITTWER_TP2.deps.json
+C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\WITTWER_TP2.dll
+C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\ref\WITTWER_TP2.dll
+C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\WITTWER_TP2.pdb
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\WITTWER_TP2.csproj.AssemblyReference.cache
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\WITTWER_TP2.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\Views\AddPswdPage.xaml.g.cs
+C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\Views\InfoPswdPage.xaml.g.cs
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
@@ -11,11 +17,7 @@ C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandar
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\WITTWER_TP2.AssemblyInfoInputs.cache
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\WITTWER_TP2.AssemblyInfo.cs
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\WITTWER_TP2.csproj.CoreCompileInputs.cache
+C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\WITTWER_TP2.dll
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\refint\WITTWER_TP2.dll
 C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\WITTWER_TP2.pdb
-C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\WITTWER_TP2.deps.json
-C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\WITTWER_TP2.dll
-C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\ref\WITTWER_TP2.dll
-C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\bin\Debug\netstandard2.0\WITTWER_TP2.pdb
-C:\Users\SLAB96\Desktop\WITTWER_TP2\WITTWER_TP2\WITTWER_TP2\obj\Debug\netstandard2.0\XamlC.stamp
