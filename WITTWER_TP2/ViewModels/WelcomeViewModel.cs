@@ -62,31 +62,6 @@ namespace WITTWER_TP2.ViewModels
         }
 
 
-        /*
-        async Task ExecuteLoadAppCommand()
-        {
-            IsBusy = true;
-
-            try
-            {
-                Applications.Clear();
-                var application = await daopasswd.GetAppModel(true);
-                foreach (var app in application)
-                {
-                    Applications.Add(app);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }
-        */
-
         async Task ExecuteLoadAppCommand() //this function executer and put the data that we use in our program for the app
         {
             IsBusy = true;

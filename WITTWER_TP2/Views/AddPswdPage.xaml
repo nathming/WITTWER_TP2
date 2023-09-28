@@ -7,10 +7,37 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="add"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid BackgroundColor="#49436C">
+            <Frame Style="{StaticResource BaseFameMrgn}">
+                <StackLayout>
+                    <Frame Margin="20" BackgroundColor="Transparent">
+                        <StackLayout>
+                            <Label Text="Name of the app :" Style="{StaticResource BaseLB}" FontSize="18"/>
+                            <Entry Style="{StaticResource Entry}" x:Name="TB_AddAppName" Text="{Binding Bbd_TB_AddAppName, Mode=TwoWay}"/>
+                            
+                            <Label Text="Your username :" Style="{StaticResource BaseLB}" FontSize="18"/>
+                            <Entry Style="{StaticResource Entry}" x:Name="TB_AddAppUsername" Text="{Binding Bbd_TB_AddAppUsername, Mode=TwoWay}"/>
+                            
+                            <Label Text="Your password :" Style="{StaticResource BaseLB}" FontSize="18"/>
+                            <Entry Style="{StaticResource Entry}" x:Name="TB_AddAppPassword" Text="{Binding Bbd_TB_AddAppPassword, Mode=TwoWay}"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Orientation="Horizontal" Grid.Column="1">
+                            <Button Text="Cancel X" Style="{StaticResource ButtonWOut_bck}" x:Name="BTN_AddAppCancel" Command="{Binding QuitPage}"/>
+                            <Button Text="Done" x:Name="BTN_AddAppDone" Command="{Binding DoneApp}"/>
+                        </StackLayout>
+                    </Grid>
+                    
+                </StackLayout>
+            </Frame>
+            
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>

@@ -26,10 +26,10 @@
             <Grid Grid.Row="2">
                 <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
                     <Label Style="{StaticResource BaseLB}" Text="Email"/>
-                    <Entry Style="{StaticResource Entry}" Text="{Binding Email, Mode=TwoWay}"/>
+                    <Entry Style="{StaticResource Entry}" Text="{Binding Email, Mode=TwoWay}" x:Name="TB_EmailLGP"/>
                     <Label Style="{StaticResource BaseLB}" Text="Password"/>
                     <Entry Style="{StaticResource Entry}" Text="{Binding Passwd, Mode=TwoWay}" IsPassword="True"/>
-                    <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+                    <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" x:Name="TB_PasswdLGP"/>
                 </StackLayout>
             </Grid>
 

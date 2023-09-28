@@ -21,22 +21,6 @@ namespace WITTWER_TP2.Services
         {
             applist = new List<AppModel>();
 
-            
-
-            /* temporary data */
-            /*applist = new List<AppModel>()
-            {
-                new AppModel { Id = "0", UserId="0", AppName = "First item", Icon="This is an item description.", AppPassword="passwd1", AppUsername="username1" },
-                new AppModel { Id = "1", UserId="1", AppName = "Second item", Icon="This is an item description.", AppPassword="passwd2", AppUsername="username2" },
-                new AppModel { Id = "2", UserId="2", AppName = "Third item", Icon="This is an item description.", AppPassword="passwd3", AppUsername="username3" },
-                new AppModel { Id = "3", UserId="3", AppName = "Fourth item", Icon="This is an item description.", AppPassword="passwd4", AppUsername="username4" },
-                new AppModel { Id = "4", UserId="4", AppName = "Fifth item", Icon="This is an item description.", AppPassword="passwd5", AppUsername="username5" },
-                new AppModel { Id = "5", UserId="5", AppName = "Sixth item", Icon="This is an item description.", AppPassword="passwd6", AppUsername="usernam60" }
-            };*/
-            /*****************/
-            
-            
-
         }
 
         public async Task<List<AppModel>> GetAllApp()
@@ -55,12 +39,16 @@ namespace WITTWER_TP2.Services
                 return null;
             }
         }
+        //sur add bien mettee foreign kex a 1
 
-
-        public async Task<IEnumerable<AppModel>> GetAppModel(bool forceRefresh = false)
+        public async Task<IEnumerable<AppModel>> AddAppTaskFunction(string appname, string username, string password, int UserId)
         {
-            return await Task.FromResult(applist);
+            UserId = 1;
+            HttpClient client = new HttpClient();
+
+            return null;
         }
+
 
 
         public async Task<bool> AddItemAsync(AppModel app)
@@ -78,5 +66,9 @@ namespace WITTWER_TP2.Services
             return await Task.FromResult(true);
         }
 
+        public async Task<IEnumerable<AppModel>> GetAppModel(bool forceRefresh = false)
+        {
+            return await Task.FromResult(applist);
+        }
     }
 }

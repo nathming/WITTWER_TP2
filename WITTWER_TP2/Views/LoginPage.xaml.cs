@@ -17,6 +17,8 @@ namespace WITTWER_TP2.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
 
+            TB_EmailLGP.Text = ""; //reset entry
+            TB_PasswdLGP.Text = "";
         }
     }
 }

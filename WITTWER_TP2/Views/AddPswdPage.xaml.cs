@@ -17,6 +17,10 @@ namespace WITTWER_TP2.Views
         {
             InitializeComponent();
             this.BindingContext = new AddPswdViewModel();
+
+            TB_AddAppName.Text = ""; //reset entry
+            TB_AddAppPassword.Text = "";
+            TB_AddAppUsername.Text = "";
         }
     }
 }

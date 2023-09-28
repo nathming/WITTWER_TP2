@@ -51,9 +51,15 @@
                 <Setter Property="CornerRadius" Value="35"/>
                 <Setter Property="BackgroundColor" Value="#3A3458"/>
                 <Setter Property="Padding" Value="10"/>
-                
             </Style>
-            
+
+            <Style TargetType="Frame" x:Key="BaseFameMrgn">
+                <Setter Property="CornerRadius" Value="35"/>
+                <Setter Property="BackgroundColor" Value="#3A3458"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="Margin" Value="60,100,60,100"/>
+            </Style>
+
         </ResourceDictionary>        
     </Application.Resources>
 </Application>
