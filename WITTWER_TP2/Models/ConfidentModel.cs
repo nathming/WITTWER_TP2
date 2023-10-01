@@ -10,6 +10,7 @@ using System.Text.Json;
 namespace WITTWER_TP2.Models
 {
 
+
     public class ConfidentModel
     {
         public string Id { get; set; }
