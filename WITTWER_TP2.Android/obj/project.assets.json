@@ -3849,6 +3849,14 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "System.Text.Json": {
+            "target": "Package",
+            "version": "[7.0.3, )"
+          },
           "System.Text.Json": {
             "target": "Package",
             "version": "[7.0.3, )"
@@ -3856,6 +3864,14 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

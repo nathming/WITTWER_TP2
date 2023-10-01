@@ -22,5 +22,15 @@ namespace WITTWER_TP2.Views
             TB_AddAppPassword.Text = "";
             TB_AddAppUsername.Text = "";
         }
+
+        private void txtchd(object sender, TextChangedEventArgs e)
+        {
+            // Obtenir le texte actuel de l'Entry
+            string newText = e.NewTextValue;
+
+            LB_PswdComment.Text =  AddPswdViewModel.txtchdfindsecurity(newText);
+        }
+
+
     }
 }

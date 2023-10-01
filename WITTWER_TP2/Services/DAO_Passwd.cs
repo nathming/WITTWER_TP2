@@ -44,15 +44,7 @@ namespace WITTWER_TP2.Services
                 return null;
             }
         }
-        //sur add bien mettee foreign kex a 1
-
-        public async Task<IEnumerable<AppModel>> AddAppTaskFunction(string appname, string username, string password, int UserId)
-        {
-            UserId = 1;
-            HttpClient client = new HttpClient();
-
-            return null;
-        }
+        
         
         /**********************/
         /** cryptionpassword **/
@@ -138,12 +130,36 @@ namespace WITTWER_TP2.Services
         /****************/
 
 
-        public async Task<bool> AddItemAsync(AppModel app)
+        public async Task<bool> AddItemAsync(string appName, string appPassword, string appUsername /*, string UserId *** because we have only the current user we will stay with the user one in the dtb */)
         {
-            applist.Add(app);
+            using (var client = new HttpClient())
+            {
+                var data = new
+                {
+                    AppName = appName,
+                    AppPassword = appPassword,
+                    AppUsername = appUsername,
+                    Icon = "",
+                    UserId = 1
+                };
 
-            return await Task.FromResult(true);
+                var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
+                client.Timeout = TimeSpan.FromSeconds(1);
+                HttpResponseMessage response = await client.PostAsync("https://wittwer.alwaysdata.net/AddApp", content); //the app is added in the dtb but the app doesn't contunue to run
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                    return true;
+                }
+
+                return false;
+                
+            }
+
+            
         }
+
 
         public async Task<bool> DeleteItemAsync(string id)
         {
@@ -153,10 +169,6 @@ namespace WITTWER_TP2.Services
             return await Task.FromResult(true);
         }
 
-        public async Task<IEnumerable<AppModel>> GetAppModel(bool forceRefresh = false)
-        {
-            return await Task.FromResult(applist);
-        }
 
     }
 }

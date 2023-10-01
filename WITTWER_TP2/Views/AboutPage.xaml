@@ -16,7 +16,7 @@
     </ContentPage.Resources>
 
     <Grid BackgroundColor="#353465">
-        <Frame Style="{StaticResource BaseFame}" Margin="70">
+        <Frame Style="{StaticResource BaseFame}" Margin="60">
             <StackLayout Orientation="Vertical">
                 <StackLayout Orientation="Horizontal">
                     <Image Source="Icninfo.png" WidthRequest="90"/>

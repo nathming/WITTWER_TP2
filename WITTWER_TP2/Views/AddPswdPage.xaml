@@ -10,7 +10,7 @@
         <Grid BackgroundColor="#49436C">
             <Frame Style="{StaticResource BaseFameMrgn}">
                 <StackLayout>
-                    <Frame Margin="20" BackgroundColor="Transparent">
+                    <Frame Margin="10" BackgroundColor="Transparent">
                         <StackLayout>
                             <Label Text="Name of the app :" Style="{StaticResource BaseLB}" FontSize="18"/>
                             <Entry Style="{StaticResource Entry}" x:Name="TB_AddAppName" Text="{Binding Bbd_TB_AddAppName, Mode=TwoWay}"/>
@@ -19,7 +19,8 @@
                             <Entry Style="{StaticResource Entry}" x:Name="TB_AddAppUsername" Text="{Binding Bbd_TB_AddAppUsername, Mode=TwoWay}"/>
                             
                             <Label Text="Your password :" Style="{StaticResource BaseLB}" FontSize="18"/>
-                            <Entry Style="{StaticResource Entry}" x:Name="TB_AddAppPassword" Text="{Binding Bbd_TB_AddAppPassword, Mode=TwoWay}"/>
+                            <Entry Style="{StaticResource Entry}" x:Name="TB_AddAppPassword" Text="{Binding Bbd_TB_AddAppPassword, Mode=TwoWay}" TextChanged="txtchd"/>
+                            <Label x:Name="LB_PswdComment" Text="" Style="{StaticResource LB_CommentRed}"/>
                         </StackLayout>
                     </Frame>
                     <Grid>
@@ -28,7 +29,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <StackLayout Orientation="Horizontal" Grid.Column="1">
+                        <StackLayout Orientation="Vertical" Grid.Column="1">
                             <Button Text="Cancel X" Style="{StaticResource ButtonWOut_bck}" x:Name="BTN_AddAppCancel" Command="{Binding QuitPage}"/>
                             <Button Text="Done" x:Name="BTN_AddAppDone" Command="{Binding DoneApp}"/>
                         </StackLayout>
